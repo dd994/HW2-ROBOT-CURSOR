@@ -11,21 +11,21 @@ public class Main {
             R1 bot1 = new R1("Ironman", "V1");
             System.out.println("My name is " + bot1.getName() + " version " + bot1.getModel());
             bot1.about();
-            bot1.generetePlanet();
+            bot1.hitThePlanet();
         } else if (a > 3 && a <= 8) {
             System.out.println("Selected form 2");
             R2 bot2 = new R2("Ironman", "V2");
             System.out.println("My name is " + bot2.getName() + " version " + bot2.getModel());
             bot2.about();
             bot2.shoot();
-            bot2.generetePlanet();
+            bot2.hitThePlanet();
         } else {
             System.out.println("Selected form 3");
             R3 bot3 = new R3("Ironman", "V3");
             System.out.println("My name is " + bot3.getName() + " version " + bot3.getModel());
             bot3.about();
             bot3.fly();
-            bot3.generetePlanet();
+            bot3.hitThePlanet();
         }
 
     }
