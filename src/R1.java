@@ -1,5 +1,6 @@
+import java.util.Random;
 
-public class R1 {
+public class R1 implements SeaPlanetA, SunPlanetC, WindPlanetB {
 
     private String name;
     private String model;
@@ -40,5 +41,33 @@ public class R1 {
 
     private void armor() {
         System.out.println(name + ": I had strong armor, and nobody can change it!!!");
+    }
+
+    public void generetePlanet() {
+        Random letterRandom = new Random();
+        char[] letters = "ABC".toCharArray();
+        char charChoise = letters[letterRandom.nextInt(letters.length)];
+        if (Character.toString(charChoise).equals("A")) {
+            adaptToSea();
+        } else if (Character.toString(charChoise).equals("B")) {
+            adaptToWind();
+        } else {
+            adaptToSun();
+        }
+    }
+
+    @Override
+    public void adaptToSea() {
+        System.out.println(getName() + " " + getModel() + "  adapted to the sea planet, feeling good!");
+    }
+
+    @Override
+    public void adaptToSun() {
+        System.out.println(getName() + " " + getModel() + "  adapted to the sun planet, feeling great!");
+    }
+
+    @Override
+    public void adaptToWind() {
+        System.out.println(getName() + " " + getModel() + "  adapted to the wind planet, feeling cool!");
     }
 }
