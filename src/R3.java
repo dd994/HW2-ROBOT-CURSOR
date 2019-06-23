@@ -1,6 +1,6 @@
-public class Robot_v3 extends Robot_v2 {
-    public Robot_v3(String name) {
-        super(name);
+public class R3 extends R2 {
+    public R3(String name, String model) {
+        super(name, model);
     }
 
     public void fly() {

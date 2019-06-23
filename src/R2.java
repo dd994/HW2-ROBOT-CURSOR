@@ -1,11 +1,13 @@
-public class Robot_v2 extends Robot_v1 {
-    public Robot_v2(String name) {
-        super(name);
+public class R2 extends R1 {
+
+    public R2(String name, String model) {
+        super(name, model);
     }
+
 
     @Override
     public void shoot() {
-        System.out.println(name + ": I am shoot from grenade launcher");
+        System.out.println(getName() +" "+ getModel()+ ": I am shoot from grenade launcher");
     }
 
     public static void about() {

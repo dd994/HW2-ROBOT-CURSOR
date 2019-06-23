@@ -1,11 +1,26 @@
-import java.util.Random;
 
-public class Robot_v1 {
-    String name;
+public class R1 {
 
-    public Robot_v1(String name) {
+    private String name;
+    private String model;
+
+    public R1(String name, String model) {
         this.name = name;
+        this.model = model;
     }
+
+    public R1() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+
+    public String getModel() {
+        return model;
+    }
+
 
     public static void about() {
         System.out.println(".... i am the first generated machine engine!");
@@ -26,6 +41,4 @@ public class Robot_v1 {
     private void armor() {
         System.out.println(name + ": I had strong armor, and nobody can change it!!!");
     }
-
-
 }
