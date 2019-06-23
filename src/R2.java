@@ -4,10 +4,9 @@ public class R2 extends R1 {
         super(name, model);
     }
 
-
     @Override
     public void shoot() {
-        System.out.println(getName() +" "+ getModel()+ ": I am shoot from grenade launcher");
+        System.out.println(getName() + " " + getModel() + ": I am shoot from grenade launcher");
     }
 
     public static void about() {
