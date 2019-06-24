@@ -21,7 +21,7 @@ public class Main {
             bot1.robotAdaptation();
 
 
-        } else if (a > 3 && a < 8) {
+        } else if (a > 3 && a <= 8) {
             R2 bot2 = new R2("Ironman", "V2");
             System.out.println("My name is " + bot2.getName() + " version " + bot2.getModel());
             bot2.about();
