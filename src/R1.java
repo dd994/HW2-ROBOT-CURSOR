@@ -43,7 +43,7 @@ public class R1 implements SeaPlanetA, SunPlanetC, WindPlanetB {
         System.out.println(name + ": I had strong armor, and nobody can change it!!!");
     }
 
-    public void hitThePlanet() {
+    public void planetTransformation() {
         Random letterRandom = new Random();
         char[] letters = "ABC".toCharArray();
         char charChoise = letters[letterRandom.nextInt(letters.length)];

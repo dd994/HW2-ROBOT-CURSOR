@@ -4,7 +4,7 @@ public class R3 extends R2 {
     }
 
     public void fly() {
-        System.out.println(" i belive i can touch the sky...");
+        System.out.println("i belive i can touch the sky...");
     }
 
     public static void about() {
