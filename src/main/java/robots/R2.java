@@ -1,4 +1,4 @@
-package main.java;
+package main.java.robots;
 
 public class R2 extends R1 {
 

@@ -1,8 +1,11 @@
-package main.java;
+package main.java.robots;
+
+import main.java.planets.Adaptation;
+import main.java.planets.Planet;
 
 import java.util.Random;
 
-public class R1 implements SeaPlanetA, SunPlanetC, WindPlanetB {
+public class R1 implements Adaptation {
 
     private String name;
     private String model;
@@ -45,31 +48,22 @@ public class R1 implements SeaPlanetA, SunPlanetC, WindPlanetB {
         System.out.println(name + ": I had strong armor, and nobody can change it!!!");
     }
 
-    public void planetTransformation() {
+    public void robotAdaptation() {
         Random letterRandom = new Random();
         char[] letters = "ABC".toCharArray();
         char charChoise = letters[letterRandom.nextInt(letters.length)];
         if (Character.toString(charChoise).equals("A")) {
-            adaptToSea();
+            adaptation(Planet.SEE);
         } else if (Character.toString(charChoise).equals("B")) {
-            adaptToWind();
+            adaptation(Planet.SUN);
         } else {
-            adaptToSun();
+            adaptation(Planet.WIND);
         }
     }
 
     @Override
-    public void adaptToSea() {
-        System.out.println(getName() + " " + getModel() + "  adapted to the sea planet, feeling good!");
+    public void adaptation(Planet planet) {
+        System.out.println(getName() + " "+getModel()+" adapting to the Planet of the " + planet);
     }
 
-    @Override
-    public void adaptToSun() {
-        System.out.println(getName() + " " + getModel() + "  adapted to the sun planet, feeling great!");
-    }
-
-    @Override
-    public void adaptToWind() {
-        System.out.println(getName() + " " + getModel() + "  adapted to the wind planet, feeling cool!");
-    }
 }
