@@ -1,3 +1,5 @@
+package main.java;
+
 import java.util.Random;
 
 public class R1 implements SeaPlanetA, SunPlanetC, WindPlanetB {

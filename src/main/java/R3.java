@@ -1,3 +1,5 @@
+package main.java;
+
 public class R3 extends R2 {
     public R3(String name, String model) {
         super(name, model);

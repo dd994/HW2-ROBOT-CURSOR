@@ -1,3 +1,5 @@
+package main.java;
+
 public class R2 extends R1 {
 
     public R2(String name, String model) {
