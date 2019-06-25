@@ -4,15 +4,12 @@ import main.java.robots.R1;
 import main.java.robots.R2;
 import main.java.robots.R3;
 
-import java.util.Random;
-
 public class Main {
     public static void main(String[] args) {
 
-        Random random = new Random();
-        int a = random.nextInt(1+11);
+        int rndNum = 1 + (int)(Math.random() * 11);
 
-        if (a <= 3) {
+        if (rndNum <= 3) {
             R1 bot1 = new R1("Ironman", "V1");
             System.out.println("My name is " + bot1.getName() + " version " + bot1.getModel());
             bot1.about();
@@ -21,7 +18,7 @@ public class Main {
             bot1.robotAdaptation();
 
 
-        } else if (a > 3 && a <= 8) {
+        } else if (rndNum <= 8) {
             R2 bot2 = new R2("Ironman", "V2");
             System.out.println("My name is " + bot2.getName() + " version " + bot2.getModel());
             bot2.about();
@@ -41,8 +38,6 @@ public class Main {
         }
 
     }
-
-
 
 
 }

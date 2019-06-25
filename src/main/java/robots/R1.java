@@ -15,8 +15,6 @@ public class R1 implements Adaptation {
         this.model = model;
     }
 
-    public R1() {
-    }
 
     public String getName() {
         return name;
@@ -28,7 +26,7 @@ public class R1 implements Adaptation {
     }
 
 
-    public static void about() {
+    public void about() {
         System.out.println(".... i am the first generated machine engine!");
     }
 
@@ -44,9 +42,6 @@ public class R1 implements Adaptation {
         System.out.println(name + ": Puff! Puff! Puff!");
     }
 
-    private void armor() {
-        System.out.println(name + ": I had strong armor, and nobody can change it!!!");
-    }
 
     public void robotAdaptation() {
         Random letterRandom = new Random();
@@ -63,7 +58,7 @@ public class R1 implements Adaptation {
 
     @Override
     public void adaptation(Planet planet) {
-        System.out.println(getName() + " "+getModel()+" adapting to the Planet of the " + planet);
+        System.out.println(getName() + " " + getModel() + " adapting to the Planet of the " + planet);
     }
 
 }
