@@ -9,7 +9,7 @@ public class R3 extends R2 {
         System.out.println("i belive i can touch the sky...");
     }
 
-    public static void about() {
+    public void about() {
         System.out.println("i am third version, and i am better then first and second, because i can fly");
     }
 }

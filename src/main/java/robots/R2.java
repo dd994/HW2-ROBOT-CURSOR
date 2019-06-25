@@ -11,7 +11,7 @@ public class R2 extends R1 {
         System.out.println(getName() + " " + getModel() + ": I am shoot from grenade launcher");
     }
 
-    public static void about() {
+    public void about() {
         System.out.println("I am second version, and i am better then first, because i have a grenade launcher");
     }
 }
